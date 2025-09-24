@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>validacion de formularios</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1 id="titulo">Validacion De Formularios con JavaScript</h1>
+<form id="formulario">
+
+    <label>Nombre:  
+        <input type="text" id="nombre" required>
+    </label>
+
+    <label>Apellido:
+        <input type="text" id="apellido" required>
+    </label>
+
+    <label>Edad:
+        <input type="text" id="edad" required>
+    </label>
+
+    <label>Email:
+        <input type="text" id="email" required>
+    </label>
+
+    <div class="grupo-sexo">
+      <label class="sexo-label">Sexo:</label>
+      <div class="sexo-opciones">
+        <label><input type="radio" name="sexo" value="masculino" required> Masculino</label>
+        <label><input type="radio" name="sexo" value="femenino" required> Femenino</label>
+      </div>
+    </div>
+
+    <label>Contraseña:
+        <input type="password" id="password" required>
+    </label>
+
+    <label>Confirmar contraseña:
+        <input type="password" id="confirmar">
+    </label>
+
+    <button type="submit">Registrar</button>
+    <p id="mensajeError"></p>
+  
+</form>
+ 
+
+
+    
+<script src="interacion.js"></script>
+</body>
+</html>
